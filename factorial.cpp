@@ -51,6 +51,8 @@ void fibonacci (int n)
         a = b;
         b = c;
     }
+
+    return;
 }
 
 int nthprime(int n)
