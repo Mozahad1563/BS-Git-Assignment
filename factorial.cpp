@@ -55,7 +55,7 @@ void Boom()
         ans*=i;
     }
 
-    return ans;
+    cout<<ans<<endl;
 
 
 
