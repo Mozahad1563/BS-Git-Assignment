@@ -40,6 +40,18 @@ const double PI = acos(-1);
 ll int hp = 1e9+7;
 
 
+void fibonacci (int n)
+{
+    int a = 0, b = 1, c, i;
+    cout << a << " " << b << " ";
+    for (i = 2; i < n; i++)
+    {
+        c = a + b;
+        cout << c << " ";
+        a = b;
+        b = c;
+    }
+}
 
 
 void Boom()
@@ -55,7 +67,9 @@ void Boom()
         ans*=i;
     }
 
-    return ans;
+    cout<<ans<<endl;
+
+    fibonacci(n);
 
 
 
