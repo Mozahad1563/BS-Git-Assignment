@@ -53,6 +53,34 @@ void fibonacci (int n)
     }
 }
 
+int nthprime(int n)
+{
+    int prime[maxx];
+    memset(prime,1,sizeof(prime));
+    for(int i=2;i*i<=maxx;i++)
+    {
+        if(prime[i])
+        {
+            for(int j=i*i;j<=maxx;j+=i)
+            {
+                prime[j]=0;
+            }
+        }
+    }
+    for(int i=2;i<=maxx;i++)
+    {
+        if(prime[i])
+        {
+            n--;
+            if(n==0)
+            {
+                return i;
+            }
+        }
+    }
+    return -1;
+}
+
 
 void Boom()
 {
