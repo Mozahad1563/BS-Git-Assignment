@@ -6,5 +6,5 @@ The main differences between the three reset options are how they handle the sta
 Keeps changes staged, leaves the working directory unchanged.
 ## Mixed Reset: ##
 Unstages changes, leaves the working directory unchanged.
-## Hard Reset:##
+## Hard Reset: ##
 Discards changes completely, modifies the working directory to match the specified commit.
